@@ -20,11 +20,11 @@ for line in greatestSongsHandle:
     artistName = line[line.rfind(' - ') + 3 : len(line.rstrip())]
     artists.append(artistName)
     # Add artist to occurences dictionary, or increment their value by one
-    try:
+    if artistName in artistsOccurences:
         artistsOccurences[artistName] = artistsOccurences[artistName] + 1
-    except:
+    else:
         artistsOccurences[artistName] = 1
-
+    
 print('Number of songs', lc)
 
 # Remap the artistsOccurences object to a sortable array
