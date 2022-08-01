@@ -10,9 +10,16 @@ This is a **Sandbox Repository** mostly for scratch notes and testing through my
 * dir(object) to see the methods avaialble on the object.
 * in can be used as a declaration for a for loop, or as a operator similiar to in SQL.
 * String counting begins at 0 (for find, etc)
-* Slicing a string can be done by calling it's indexes. For instance
+* Slicing a string or an array can be done by calling it's indexes. For instance
 ```python
 myString = 'This is a String'
 print(myString[0:4]) # Outputs 'This'
 ```
 * In python 2, non latin characters were type unicode, in Python 3 they are type str
+* range(x) returns an array containing values 0 through x. This is useful for for loops where you need to know your index. For instance:
+``` python
+artists = ['Bob Dylan', 'The Rolling Stones', 'John Lennon', 'Marvin Gaye', 'Aretha Franklin']
+for i in range(len(artists)):
+  print(artists[i])
+```
+* Plus operator and concatenate arrays
